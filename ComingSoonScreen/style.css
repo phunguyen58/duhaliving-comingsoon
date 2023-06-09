@@ -1,0 +1,119 @@
+body {
+  background-color: #241e20;
+  font-family: "Space Grotesk", sans-serif;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-coming-soon,
+.title-website {
+  margin: 0;
+  flex: 1;
+  align-self: center;
+}
+
+.logo,
+.sofa {
+  display: block;
+  margin: auto;
+}
+
+.logo {
+  width: 7ch;
+}
+
+.title-coming-soon {
+  margin-top: 20px;
+  line-height: 100%;
+  font-size: 6ch;
+  color: #f9f8f6;
+}
+
+.title-website {
+  line-height: 100%;
+  font-size: 17ch;
+  color: #e5e5cb;
+}
+
+.overlay {
+  position: relative;
+  margin-top: 5ch;
+  display: flex;
+  justify-content: center;
+}
+
+.title-website-overlay {
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  align-self: center;
+  line-height: 100%;
+  font-size: 17ch;
+  color: #323131;
+  display: block;
+}
+
+.sofa {
+  width: 100ch;
+  margin-top: -18ch;
+}
+
+@media only screen and (max-width: 1023px) {
+  .content {
+    margin-top: 30vh;
+  }
+  .title-coming-soon {
+    font-size: 5vh;
+  }
+
+  .overlay {
+    margin-top: 2ch !important;
+  }
+
+  .title-website {
+    line-height: 100%;
+    font-size: 12vh;
+    color: #e5e5cb;
+  }
+
+  .title-website-overlay {
+    margin: 0;
+    font-size: 12vh;
+  }
+  .sofa {
+    width: 60vh;
+    margin-top: -6ch;
+  }
+}
+
+@media only screen and (max-width: 716px) {
+  .content {
+    margin-top: 30vh;
+  }
+  .title-coming-soon {
+    font-size: 3.25vh;
+  }
+
+  .overlay {
+    margin-top: 2ch !important;
+  }
+
+  .title-website {
+    font-size: 8vh;
+  }
+  .title-website-overlay {
+    margin: 0;
+    font-size: 8vh;
+  }
+  .sofa {
+    width: 40vh;
+    margin-top: -6ch;
+  }
+}
